@@ -1,0 +1,29 @@
+<RCC>
+    <qresource prefix="/new/pics">
+        <file>TeaPres.ico</file>
+        <file>TeaPres.png</file>
+        <file>underline.svg</file>
+        <file>italic.svg</file>
+        <file>bold.svg</file>
+        <file>redo.svg</file>
+        <file>cut.svg</file>
+        <file>copy.svg</file>
+        <file>paste.svg</file>
+        <file>undo.svg</file>
+        <file>insert-image.svg</file>
+        <file>applications-internet.svg</file>
+        <file>format-indent-more.svg</file>
+        <file>format-indent-less.svg</file>
+        <file>menu.svg</file>
+        <file>add.svg</file>
+        <file>present.svg</file>
+        <file>up.svg</file>
+        <file>delete.svg</file>
+        <file>down.svg</file>
+        <file>save.svg</file>
+        <file>saveas.svg</file>
+        <file>open.svg</file>
+        <file>docclose.svg</file>
+        <file>about.svg</file>
+    </qresource>
+</RCC>

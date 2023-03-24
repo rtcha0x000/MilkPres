@@ -1,0 +1,33 @@
+<?xml version="1.0" encoding="UTF-8" standalone="no"?>
+<!-- Created with Inkscape (http://www.inkscape.org/) -->
+
+<svg
+   version="1.1"
+   id="svg845"
+   xml:space="preserve"
+   width="12"
+   height="12"
+   xmlns:inkscape="http://www.inkscape.org/namespaces/inkscape"
+   xmlns:sodipodi="http://sodipodi.sourceforge.net/DTD/sodipodi-0.dtd"
+   xmlns="http://www.w3.org/2000/svg"
+   xmlns:svg="http://www.w3.org/2000/svg"><defs
+     id="defs849" /><sodipodi:namedview
+     id="namedview847"
+     pagecolor="#ffffff"
+     bordercolor="#000000"
+     borderopacity="0.25"
+     inkscape:showpageshadow="2"
+     inkscape:pageopacity="0.0"
+     inkscape:pagecheckerboard="0"
+     inkscape:deskcolor="#d1d1d1" /><inkscape:clipboard
+     style="font-variation-settings:normal;opacity:1;vector-effect:none;fill:currentColor;fill-opacity:1;stroke:none;stroke-width:1;stroke-linecap:butt;stroke-linejoin:miter;stroke-miterlimit:4;stroke-dasharray:none;stroke-dashoffset:0;stroke-opacity:1;-inkscape-stroke:none;stop-color:#000000;stop-opacity:1"
+     min="2,2"
+     max="14,14"
+     geom-min="2,2"
+     geom-max="14,14" /><g
+     id="g851"
+     transform="translate(-2,-2)"><path
+       style="color:#232629;fill:currentColor;fill-opacity:1;stroke:none"
+       d="m 2,2 v 9 h 4 v 2 H 5 v 1 h 6 v -1 h -1 v -2 h 4 V 2 Z m 1,1 h 10 v 7 H 3 Z m 4,1 v 5 l 3,-2.5 z m 0,7 h 2 v 2 H 7 Z"
+       class="ColorScheme-Text"
+       id="path4" /></g></svg>

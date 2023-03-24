@@ -1,0 +1,33 @@
+<?xml version="1.0" encoding="UTF-8" standalone="no"?>
+<!-- Created with Inkscape (http://www.inkscape.org/) -->
+
+<svg
+   version="1.1"
+   id="svg845"
+   xml:space="preserve"
+   width="9.9980469"
+   height="12"
+   xmlns:inkscape="http://www.inkscape.org/namespaces/inkscape"
+   xmlns:sodipodi="http://sodipodi.sourceforge.net/DTD/sodipodi-0.dtd"
+   xmlns="http://www.w3.org/2000/svg"
+   xmlns:svg="http://www.w3.org/2000/svg"><defs
+     id="defs849" /><sodipodi:namedview
+     id="namedview847"
+     pagecolor="#ffffff"
+     bordercolor="#000000"
+     borderopacity="0.25"
+     inkscape:showpageshadow="2"
+     inkscape:pageopacity="0.0"
+     inkscape:pagecheckerboard="0"
+     inkscape:deskcolor="#d1d1d1" /><inkscape:clipboard
+     style="font-variation-settings:normal;opacity:1;vector-effect:none;fill:currentColor;fill-opacity:1;stroke:none;stroke-width:1;stroke-linecap:butt;stroke-linejoin:miter;stroke-miterlimit:4;stroke-dasharray:none;stroke-dashoffset:0;stroke-opacity:1;-inkscape-stroke:none;stop-color:#000000;stop-opacity:1"
+     min="3,2"
+     max="12.998047,14"
+     geom-min="3,2"
+     geom-max="12.998047,14" /><g
+     id="g851"
+     transform="translate(-3,-2)"><path
+       style="color:#232629;fill:currentColor;fill-opacity:1;stroke:none"
+       d="M 5,2 C 4.567,2.75 4.34825,2.75 4.78125,3.5 l 2.625,4.5 -1.5,2.21875 C 5.63425,10.08075 5.325,10 5,10 c -1.105,0 -2,0.895 -2,2 0,1.105 0.895,2 2,2 1.105,0 2,-0.895 2,-2 0,-0.405 -0.13675,-0.77875 -0.34375,-1.09375 -0.005,-0.008 0.005,-0.02425 0,-0.03125 L 7.09375,10.25 C 7.89575,10.225 8.008,9.65725 8.5,9.65625 c 0.011,0 0.02025,-10e-4 0.03125,0 L 8.5625,9.71875 9.34375,10.875 v 0.03125 C 9.13775,11.22125 8.9980469,11.595 8.9980469,12 c 0,1.105 0.895,2 2.0000001,2 1.105,0 2,-0.895 2,-2 0,-1.105 -0.895,-2 -2,-2 -0.325,0 -0.633297,0.08075 -0.904297,0.21875 L 8.59375,8 c 0,0 2.635,-4.508 2.625,-4.5 0.433,-0.75 0.212297,-0.75 -0.220703,-1.5 L 7.9980469,7.125 Z M 7.9980469,8 H 8 C 8.276,8 8.5,8.224 8.5,8.5 8.5,8.754 8.3075,8.968 8.0625,9 H 7.9375 C 7.6925,8.968 7.4980469,8.754 7.4980469,8.5 c 0,-0.276 0.224,-0.5 0.5,-0.5 z m -3,3 c 0.552,0 1,0.448 1,1 0,0.552 -0.448,1 -1,1 -0.552,0 -1,-0.448 -1,-1 0,-0.552 0.448,-1 1,-1 z m 6.0000001,0 c 0.552,0 1,0.448 1,1 0,0.552 -0.448,1 -1,1 -0.552,0 -1.0000001,-0.448 -1.0000001,-1 0,-0.552 0.4480001,-1 1.0000001,-1 z"
+       class="ColorScheme-Text"
+       id="path4" /></g></svg>

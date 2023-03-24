@@ -1,0 +1,764 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<ui version="4.0">
+ <class>MRichTextEdit</class>
+ <widget class="QWidget" name="MRichTextEdit">
+  <property name="geometry">
+   <rect>
+    <x>0</x>
+    <y>0</y>
+    <width>1038</width>
+    <height>705</height>
+   </rect>
+  </property>
+  <property name="windowTitle">
+   <string notr="true"/>
+  </property>
+  <property name="styleSheet">
+   <string notr="true">background-color:white;
+color:black;</string>
+  </property>
+  <layout class="QVBoxLayout" name="verticalLayout">
+   <property name="spacing">
+    <number>1</number>
+   </property>
+   <property name="leftMargin">
+    <number>1</number>
+   </property>
+   <property name="topMargin">
+    <number>1</number>
+   </property>
+   <property name="rightMargin">
+    <number>1</number>
+   </property>
+   <property name="bottomMargin">
+    <number>1</number>
+   </property>
+   <item>
+    <widget class="QWidget" name="f_toolbar" native="true">
+     <layout class="QHBoxLayout" name="horizontalLayout">
+      <property name="spacing">
+       <number>2</number>
+      </property>
+      <property name="leftMargin">
+       <number>0</number>
+      </property>
+      <property name="topMargin">
+       <number>0</number>
+      </property>
+      <property name="rightMargin">
+       <number>0</number>
+      </property>
+      <property name="bottomMargin">
+       <number>0</number>
+      </property>
+      <item>
+       <widget class="Line" name="line_4">
+        <property name="orientation">
+         <enum>Qt::Vertical</enum>
+        </property>
+       </widget>
+      </item>
+      <item>
+       <widget class="QToolButton" name="f_redo">
+        <property name="enabled">
+         <bool>false</bool>
+        </property>
+        <property name="focusPolicy">
+         <enum>Qt::ClickFocus</enum>
+        </property>
+        <property name="toolTip">
+         <string>Redo</string>
+        </property>
+        <property name="styleSheet">
+         <string notr="true">border-radius:0px;</string>
+        </property>
+        <property name="text">
+         <string/>
+        </property>
+        <property name="icon">
+         <iconset resource="resource.qrc">
+          <normaloff>:/new/pics/redo.svg</normaloff>:/new/pics/redo.svg</iconset>
+        </property>
+        <property name="iconSize">
+         <size>
+          <width>16</width>
+          <height>16</height>
+         </size>
+        </property>
+       </widget>
+      </item>
+      <item>
+       <widget class="QToolButton" name="f_undo">
+        <property name="enabled">
+         <bool>false</bool>
+        </property>
+        <property name="focusPolicy">
+         <enum>Qt::ClickFocus</enum>
+        </property>
+        <property name="toolTip">
+         <string>Undo (CTRL+Z)</string>
+        </property>
+        <property name="styleSheet">
+         <string notr="true">border-radius:0px;</string>
+        </property>
+        <property name="text">
+         <string>Undo</string>
+        </property>
+        <property name="icon">
+         <iconset resource="resource.qrc">
+          <normaloff>:/new/pics/undo.svg</normaloff>:/new/pics/undo.svg</iconset>
+        </property>
+        <property name="iconSize">
+         <size>
+          <width>16</width>
+          <height>16</height>
+         </size>
+        </property>
+       </widget>
+      </item>
+      <item>
+       <widget class="QToolButton" name="f_cut">
+        <property name="focusPolicy">
+         <enum>Qt::ClickFocus</enum>
+        </property>
+        <property name="toolTip">
+         <string>Cut (CTRL+X)</string>
+        </property>
+        <property name="styleSheet">
+         <string notr="true">border-radius:0px;</string>
+        </property>
+        <property name="text">
+         <string>Cut</string>
+        </property>
+        <property name="icon">
+         <iconset resource="resource.qrc">
+          <normaloff>:/new/pics/cut.svg</normaloff>:/new/pics/cut.svg</iconset>
+        </property>
+        <property name="iconSize">
+         <size>
+          <width>16</width>
+          <height>16</height>
+         </size>
+        </property>
+       </widget>
+      </item>
+      <item>
+       <widget class="QToolButton" name="f_copy">
+        <property name="focusPolicy">
+         <enum>Qt::ClickFocus</enum>
+        </property>
+        <property name="toolTip">
+         <string>Copy (CTRL+C)</string>
+        </property>
+        <property name="styleSheet">
+         <string notr="true">border-radius:0px;</string>
+        </property>
+        <property name="text">
+         <string>Copy</string>
+        </property>
+        <property name="icon">
+         <iconset resource="resource.qrc">
+          <normaloff>:/new/pics/copy.svg</normaloff>:/new/pics/copy.svg</iconset>
+        </property>
+        <property name="iconSize">
+         <size>
+          <width>16</width>
+          <height>16</height>
+         </size>
+        </property>
+       </widget>
+      </item>
+      <item>
+       <widget class="QToolButton" name="f_paste">
+        <property name="focusPolicy">
+         <enum>Qt::ClickFocus</enum>
+        </property>
+        <property name="toolTip">
+         <string>Paste (CTRL+V)</string>
+        </property>
+        <property name="styleSheet">
+         <string notr="true">border-radius:0px;</string>
+        </property>
+        <property name="text">
+         <string>Paste</string>
+        </property>
+        <property name="icon">
+         <iconset resource="resource.qrc">
+          <normaloff>:/new/pics/paste.svg</normaloff>:/new/pics/paste.svg</iconset>
+        </property>
+        <property name="iconSize">
+         <size>
+          <width>16</width>
+          <height>16</height>
+         </size>
+        </property>
+       </widget>
+      </item>
+      <item>
+       <widget class="Line" name="line">
+        <property name="orientation">
+         <enum>Qt::Vertical</enum>
+        </property>
+       </widget>
+      </item>
+      <item>
+       <widget class="QToolButton" name="f_link">
+        <property name="focusPolicy">
+         <enum>Qt::ClickFocus</enum>
+        </property>
+        <property name="toolTip">
+         <string>Link (CTRL+L)</string>
+        </property>
+        <property name="styleSheet">
+         <string notr="true">border-radius:0px;</string>
+        </property>
+        <property name="text">
+         <string>Link</string>
+        </property>
+        <property name="icon">
+         <iconset resource="resource.qrc">
+          <normaloff>:/new/pics/applications-internet.svg</normaloff>:/new/pics/applications-internet.svg</iconset>
+        </property>
+        <property name="iconSize">
+         <size>
+          <width>16</width>
+          <height>16</height>
+         </size>
+        </property>
+        <property name="checkable">
+         <bool>true</bool>
+        </property>
+       </widget>
+      </item>
+      <item>
+       <widget class="Line" name="line_3">
+        <property name="orientation">
+         <enum>Qt::Vertical</enum>
+        </property>
+       </widget>
+      </item>
+      <item>
+       <widget class="QToolButton" name="f_bold">
+        <property name="focusPolicy">
+         <enum>Qt::ClickFocus</enum>
+        </property>
+        <property name="toolTip">
+         <string notr="true">Bold (CTRL+B)</string>
+        </property>
+        <property name="styleSheet">
+         <string notr="true">border-radius:0px;</string>
+        </property>
+        <property name="text">
+         <string>Bold</string>
+        </property>
+        <property name="icon">
+         <iconset resource="resource.qrc">
+          <normaloff>:/new/pics/bold.svg</normaloff>:/new/pics/bold.svg</iconset>
+        </property>
+        <property name="iconSize">
+         <size>
+          <width>16</width>
+          <height>16</height>
+         </size>
+        </property>
+        <property name="checkable">
+         <bool>true</bool>
+        </property>
+       </widget>
+      </item>
+      <item>
+       <widget class="QToolButton" name="f_italic">
+        <property name="focusPolicy">
+         <enum>Qt::ClickFocus</enum>
+        </property>
+        <property name="toolTip">
+         <string>Italic (CTRL+I)</string>
+        </property>
+        <property name="styleSheet">
+         <string notr="true">border-radius:0px;</string>
+        </property>
+        <property name="text">
+         <string>Italic</string>
+        </property>
+        <property name="icon">
+         <iconset resource="resource.qrc">
+          <normaloff>:/new/pics/italic.svg</normaloff>:/new/pics/italic.svg</iconset>
+        </property>
+        <property name="iconSize">
+         <size>
+          <width>16</width>
+          <height>16</height>
+         </size>
+        </property>
+        <property name="checkable">
+         <bool>true</bool>
+        </property>
+       </widget>
+      </item>
+      <item>
+       <widget class="QToolButton" name="f_underline">
+        <property name="focusPolicy">
+         <enum>Qt::ClickFocus</enum>
+        </property>
+        <property name="toolTip">
+         <string>Underline (CTRL+U)</string>
+        </property>
+        <property name="styleSheet">
+         <string notr="true">border-radius:0px;</string>
+        </property>
+        <property name="text">
+         <string>Underline</string>
+        </property>
+        <property name="icon">
+         <iconset resource="resource.qrc">
+          <normaloff>:/new/pics/underline.svg</normaloff>:/new/pics/underline.svg</iconset>
+        </property>
+        <property name="iconSize">
+         <size>
+          <width>16</width>
+          <height>16</height>
+         </size>
+        </property>
+        <property name="checkable">
+         <bool>true</bool>
+        </property>
+       </widget>
+      </item>
+      <item>
+       <widget class="QToolButton" name="f_indent_dec">
+        <property name="focusPolicy">
+         <enum>Qt::ClickFocus</enum>
+        </property>
+        <property name="toolTip">
+         <string>Decrease indentation (CTRL+,)</string>
+        </property>
+        <property name="styleSheet">
+         <string notr="true">border-radius:0px;</string>
+        </property>
+        <property name="text">
+         <string>Decrease indentation</string>
+        </property>
+        <property name="icon">
+         <iconset resource="resource.qrc">
+          <normaloff>:/new/pics/format-indent-less.svg</normaloff>:/new/pics/format-indent-less.svg</iconset>
+        </property>
+        <property name="iconSize">
+         <size>
+          <width>16</width>
+          <height>16</height>
+         </size>
+        </property>
+       </widget>
+      </item>
+      <item>
+       <widget class="QToolButton" name="f_indent_inc">
+        <property name="focusPolicy">
+         <enum>Qt::ClickFocus</enum>
+        </property>
+        <property name="toolTip">
+         <string>Increase indentation (CTRL+.)</string>
+        </property>
+        <property name="styleSheet">
+         <string notr="true">border-radius:0px;</string>
+        </property>
+        <property name="text">
+         <string>Increase indentation</string>
+        </property>
+        <property name="icon">
+         <iconset resource="resource.qrc">
+          <normaloff>:/new/pics/format-indent-more.svg</normaloff>:/new/pics/format-indent-more.svg</iconset>
+        </property>
+        <property name="iconSize">
+         <size>
+          <width>16</width>
+          <height>16</height>
+         </size>
+        </property>
+       </widget>
+      </item>
+      <item>
+       <widget class="Line" name="line_2">
+        <property name="orientation">
+         <enum>Qt::Vertical</enum>
+        </property>
+       </widget>
+      </item>
+      <item>
+       <widget class="QToolButton" name="f_fgcolor">
+        <property name="minimumSize">
+         <size>
+          <width>16</width>
+          <height>16</height>
+         </size>
+        </property>
+        <property name="maximumSize">
+         <size>
+          <width>16</width>
+          <height>16</height>
+         </size>
+        </property>
+        <property name="focusPolicy">
+         <enum>Qt::ClickFocus</enum>
+        </property>
+        <property name="toolTip">
+         <string>Text foreground color</string>
+        </property>
+        <property name="text">
+         <string>.</string>
+        </property>
+        <property name="iconSize">
+         <size>
+          <width>16</width>
+          <height>16</height>
+         </size>
+        </property>
+       </widget>
+      </item>
+      <item>
+       <widget class="QToolButton" name="f_bgcolor">
+        <property name="minimumSize">
+         <size>
+          <width>16</width>
+          <height>16</height>
+         </size>
+        </property>
+        <property name="maximumSize">
+         <size>
+          <width>16</width>
+          <height>16</height>
+         </size>
+        </property>
+        <property name="focusPolicy">
+         <enum>Qt::ClickFocus</enum>
+        </property>
+        <property name="toolTip">
+         <string>Text background color</string>
+        </property>
+        <property name="text">
+         <string>.</string>
+        </property>
+        <property name="iconSize">
+         <size>
+          <width>16</width>
+          <height>16</height>
+         </size>
+        </property>
+       </widget>
+      </item>
+      <item>
+       <widget class="QComboBox" name="f_fontsize">
+        <property name="focusPolicy">
+         <enum>Qt::ClickFocus</enum>
+        </property>
+        <property name="toolTip">
+         <string>Font size</string>
+        </property>
+        <property name="styleSheet">
+         <string notr="true">QComboBox{
+font:20px &quot;Source Code Pro&quot;;
+border:1px solid #009265;
+border-radius:0px;
+}
+QComboBox:hover{
+background-color:#98CBBB;
+}</string>
+        </property>
+        <property name="editable">
+         <bool>true</bool>
+        </property>
+       </widget>
+      </item>
+      <item>
+       <widget class="QFontComboBox" name="f_font">
+        <property name="maximumSize">
+         <size>
+          <width>200</width>
+          <height>16777215</height>
+         </size>
+        </property>
+        <property name="styleSheet">
+         <string notr="true">QFontComboBox{
+font-size:20px;
+border:1px solid #009265;
+border-radius:0px;
+}
+QFontComboBox:hover{
+background-color:#98CBBB;
+}</string>
+        </property>
+       </widget>
+      </item>
+      <item>
+       <widget class="Line" name="line_6">
+        <property name="orientation">
+         <enum>Qt::Vertical</enum>
+        </property>
+       </widget>
+      </item>
+      <item>
+       <widget class="QToolButton" name="f_image">
+        <property name="styleSheet">
+         <string notr="true">border-radius:0px;</string>
+        </property>
+        <property name="text">
+         <string notr="true"/>
+        </property>
+        <property name="icon">
+         <iconset resource="resource.qrc">
+          <normaloff>:/new/pics/insert-image.svg</normaloff>:/new/pics/insert-image.svg</iconset>
+        </property>
+       </widget>
+      </item>
+      <item>
+       <spacer name="horizontalSpacer">
+        <property name="orientation">
+         <enum>Qt::Horizontal</enum>
+        </property>
+        <property name="sizeHint" stdset="0">
+         <size>
+          <width>40</width>
+          <height>20</height>
+         </size>
+        </property>
+       </spacer>
+      </item>
+      <item>
+       <widget class="QToolButton" name="f_menu">
+        <property name="styleSheet">
+         <string notr="true">border-radius:0px;</string>
+        </property>
+        <property name="text">
+         <string/>
+        </property>
+        <property name="icon">
+         <iconset resource="resource.qrc">
+          <normaloff>:/new/pics/menu.svg</normaloff>:/new/pics/menu.svg</iconset>
+        </property>
+       </widget>
+      </item>
+     </layout>
+     <zorder>f_cut</zorder>
+     <zorder>f_copy</zorder>
+     <zorder>f_paste</zorder>
+     <zorder>line</zorder>
+     <zorder>f_link</zorder>
+     <zorder>line_3</zorder>
+     <zorder>f_italic</zorder>
+     <zorder>f_underline</zorder>
+     <zorder>line_2</zorder>
+     <zorder>f_indent_dec</zorder>
+     <zorder>f_indent_inc</zorder>
+     <zorder>f_bold</zorder>
+     <zorder>f_bgcolor</zorder>
+     <zorder>f_image</zorder>
+     <zorder>f_menu</zorder>
+     <zorder>f_fgcolor</zorder>
+     <zorder>horizontalSpacer</zorder>
+     <zorder>f_redo</zorder>
+     <zorder>f_undo</zorder>
+     <zorder>line_4</zorder>
+     <zorder>f_fontsize</zorder>
+     <zorder>line_6</zorder>
+     <zorder>f_font</zorder>
+    </widget>
+   </item>
+   <item>
+    <layout class="QHBoxLayout" name="horizontalLayout_2">
+     <item>
+      <widget class="QComboBox" name="f_paragraph">
+       <property name="focusPolicy">
+        <enum>Qt::ClickFocus</enum>
+       </property>
+       <property name="toolTip">
+        <string>Paragraph formatting</string>
+       </property>
+       <property name="styleSheet">
+        <string notr="true">QComboBox{
+font:20px &quot;Source Code Pro&quot;;
+border:1px solid #009265;
+border-radius:0px;
+}
+QComboBox:hover{
+background-color:#98CBBB;
+}</string>
+       </property>
+       <property name="editable">
+        <bool>true</bool>
+       </property>
+      </widget>
+     </item>
+     <item>
+      <widget class="QToolButton" name="f_strikeout">
+       <property name="styleSheet">
+        <string notr="true">QToolButton{
+font:20px &quot;Source Code Pro&quot;;
+border:1px solid #009265;
+border-radius:0px;
+}
+QToolButton:hover{
+background-color:#98CBBB;
+}</string>
+       </property>
+       <property name="text">
+        <string>Strike Out</string>
+       </property>
+       <property name="checkable">
+        <bool>true</bool>
+       </property>
+      </widget>
+     </item>
+     <item>
+      <widget class="QToolButton" name="f_list_bullet">
+       <property name="focusPolicy">
+        <enum>Qt::ClickFocus</enum>
+       </property>
+       <property name="toolTip">
+        <string>Bullet list (CTRL+-)</string>
+       </property>
+       <property name="styleSheet">
+        <string notr="true">QToolButton{
+font:20px &quot;Source Code Pro&quot;;
+border:1px solid #009265;
+border-radius:0px;
+}
+QToolButton:hover{
+background-color:#98CBBB;
+}</string>
+       </property>
+       <property name="text">
+        <string>Bullet list</string>
+       </property>
+       <property name="iconSize">
+        <size>
+         <width>16</width>
+         <height>16</height>
+        </size>
+       </property>
+       <property name="checkable">
+        <bool>true</bool>
+       </property>
+      </widget>
+     </item>
+     <item>
+      <widget class="QToolButton" name="f_list_ordered">
+       <property name="focusPolicy">
+        <enum>Qt::ClickFocus</enum>
+       </property>
+       <property name="toolTip">
+        <string>Ordered list (CTRL+=)</string>
+       </property>
+       <property name="styleSheet">
+        <string notr="true">QToolButton{
+font:20px &quot;Source Code Pro&quot;;
+border:1px solid #009265;
+border-radius:0px;
+}
+QToolButton:hover{
+background-color:#98CBBB;
+}</string>
+       </property>
+       <property name="text">
+        <string>Ordered list</string>
+       </property>
+       <property name="iconSize">
+        <size>
+         <width>16</width>
+         <height>16</height>
+        </size>
+       </property>
+       <property name="checkable">
+        <bool>true</bool>
+       </property>
+      </widget>
+     </item>
+     <item>
+      <spacer name="horizontalSpacer_2">
+       <property name="orientation">
+        <enum>Qt::Horizontal</enum>
+       </property>
+       <property name="sizeHint" stdset="0">
+        <size>
+         <width>40</width>
+         <height>20</height>
+        </size>
+       </property>
+      </spacer>
+     </item>
+    </layout>
+   </item>
+   <item>
+    <widget class="MTextEdit" name="f_textedit">
+     <property name="autoFormatting">
+      <set>QTextEdit::AutoNone</set>
+     </property>
+     <property name="tabChangesFocus">
+      <bool>true</bool>
+     </property>
+     <property name="html">
+      <string>&lt;!DOCTYPE HTML PUBLIC &quot;-//W3C//DTD HTML 4.0//EN&quot; &quot;http://www.w3.org/TR/REC-html40/strict.dtd&quot;&gt;
+&lt;html&gt;&lt;head&gt;&lt;meta name=&quot;qrichtext&quot; content=&quot;1&quot; /&gt;&lt;style type=&quot;text/css&quot;&gt;
+p, li { white-space: pre-wrap; }
+&lt;/style&gt;&lt;/head&gt;&lt;body style=&quot; font-family:'Sans Serif'; font-size:9pt; font-weight:400; font-style:normal;&quot;&gt;
+&lt;p style=&quot;-qt-paragraph-type:empty; margin-top:0px; margin-bottom:0px; margin-left:0px; margin-right:0px; -qt-block-indent:0; text-indent:0px; font-family:'Sans Serif';&quot;&gt;&lt;br /&gt;&lt;/p&gt;&lt;/body&gt;&lt;/html&gt;</string>
+     </property>
+    </widget>
+   </item>
+   <item>
+    <layout class="QHBoxLayout" name="horizontalLayout_3">
+     <item>
+      <spacer name="horizontalSpacer_3">
+       <property name="orientation">
+        <enum>Qt::Horizontal</enum>
+       </property>
+       <property name="sizeHint" stdset="0">
+        <size>
+         <width>40</width>
+         <height>20</height>
+        </size>
+       </property>
+      </spacer>
+     </item>
+     <item>
+      <widget class="QPushButton" name="pushButton">
+       <property name="minimumSize">
+        <size>
+         <width>100</width>
+         <height>0</height>
+        </size>
+       </property>
+       <property name="styleSheet">
+        <string notr="true">QPushButton{
+border-radius:0px;
+border:1px solid #009265;
+font:20px &quot;Source Code Pro&quot;;
+}
+QPushButton:hover{
+background-color:#98CBBB
+}</string>
+       </property>
+       <property name="text">
+        <string>Enter</string>
+       </property>
+      </widget>
+     </item>
+    </layout>
+   </item>
+  </layout>
+ </widget>
+ <customwidgets>
+  <customwidget>
+   <class>MTextEdit</class>
+   <extends>QTextEdit</extends>
+   <header>mtextedit.h</header>
+  </customwidget>
+ </customwidgets>
+ <tabstops>
+  <tabstop>f_textedit</tabstop>
+  <tabstop>f_image</tabstop>
+  <tabstop>f_menu</tabstop>
+ </tabstops>
+ <resources>
+  <include location="resource.qrc"/>
+ </resources>
+ <connections/>
+</ui>
